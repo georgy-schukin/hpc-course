@@ -43,10 +43,10 @@ int main(int argc, char **argv) {
 
 	cout << "Time = " << time << endl;
 
-	for (auto &el: data) {
-		//cout << el << " ";
+	/*for (auto &el: data) {
+		cout << el << " ";
 	}
-	//cout << endl;
+	cout << endl;*/
 
 	return 0;
 }
