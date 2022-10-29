@@ -53,8 +53,7 @@ int main(int argc, char **argv) {
     int viewPlaneResolutionX = (argc > 1 ? stoi(argv[1]) : 600);
     int viewPlaneResolutionY = (argc > 2 ? stoi(argv[2]) : 600);
     int numOfSamples = (argc > 3 ? stoi(argv[3]) : 1);
-    int numOfFrames = (argc > 4 ? stoi(argv[4]) : 1);
-    string sceneFile = (argc > 5 ? argv[5] : "");
+    string sceneFile = (argc > 4 ? argv[4] : "");
 
     Scene scene;
     if (sceneFile.empty()) {
