@@ -104,6 +104,8 @@ int main(int argc, char **argv) {
     cout << "Time = " << time << endl;
     
     // We are sending computed piece to the main (0) process as array of doubles.
+    // Each pixel is stored as 3 double values: red, green, blue.
+    // Image stores its pixels as a single block in memory.
     MPI_Request send_request;
     MPI_Isend(myPiece.getData(), mySizeX * mySizeY * 3, MPI_DOUBLE, 0, 0, MPI_COMM_WORLD, &send_request);
 
