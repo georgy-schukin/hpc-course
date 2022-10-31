@@ -126,6 +126,8 @@ int main(int argc, char **argv) {
             // TODO: copy the received piece into the correct place in the final image.
             // Hint: by knowing a rank of sending process (src_rank) and how pieces are distributed, 
             // you can compute the correct location for its piece.
+            // Use Image::get(x, y) method to access pixels of the image.
+            // Use Image::set(x, y, color) method to set pixels of the image.
         }
         finalImage.saveJPEG("raytracing_" + to_string(size) + ".jpg");
     }
